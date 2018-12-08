@@ -33,16 +33,17 @@ router.get('/:id', (req, res) => {
 
 // GET projectActions
 router.get('/:id/actions', (req, res) => {
-    const { id } = req.params;
-     projectDb.getProjectActions(id)
-      .then(actions => {
-        res.status(200).json(actions);
-      })
-      .catch(err => {
-        res.status(500).json({ message: "500 error", err });
-      });
-  })
-  
+  const { id } = req.params;
+
+  projectDb.getProjectActions(id)
+    .then(actions => {
+      res.status(200).json(actions);
+    })
+    .catch(err => {
+      res.status(500).json({ message: "500 error", err });
+    });
+})
+
 // CREATE new project
 router.post('/', (req, res) => {
   const { name, description } = req.body;
