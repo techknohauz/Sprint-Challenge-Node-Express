@@ -9,5 +9,6 @@ configureMiddleware(server);
 
 // routers
 routers.projectRouters(server);
+routers.actionRouters(server);
 
 module.exports = server;
