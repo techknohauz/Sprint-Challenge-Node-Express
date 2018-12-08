@@ -10,7 +10,7 @@ Express is one of the most simple yet powerful ways to create a webserver. It is
 */
 ## Mention two parts of Express that you learned about this week.
 /*
-I learned middleware and routing in express this week
+I learned the concepts actual coding with middleware and routing in express this week.
 */
 ## What is Middleware?
 /*
@@ -30,5 +30,5 @@ We can partition it by separating route handlers into different files. Then turn
 */
 ## What is express.json() and why do we need it?
 /*
-Express.jason is a built-in express middleware that parses incoming requests with JSON. We need it as a builtin parser of jason data unlike the old method of installing a nodyparses first.
+Express.jason is a built-in express middleware that parses incoming requests with JSON. We need it as a built-in parser of jason data unlike the old method of installing a bodyparser first.
 */
